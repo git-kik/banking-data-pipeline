@@ -1,0 +1,9 @@
+{"timestamp":"2025-05-17T15:40:02.748948","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-05-17T15:40:02.763582","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/load_raw_to_staging.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-05-17T15:40:03.161314","level":"info","event":"Executing: \n            INSERT INTO staging.account\n            SELECT * FROM raw.account;\n        ","logger":"airflow.task.operators.airflow.providers.common.sql.operators.sql.SQLExecuteQueryOperator"}
+{"timestamp":"2025-05-17T15:40:03.208340","level":"info","event":"Secrets backends loaded for worker","count":1,"backend_classes":["EnvironmentVariablesBackend"],"logger":"supervisor"}
+{"timestamp":"2025-05-17T15:40:03.419539","level":"info","event":"Connection Retrieved 'banking_data_postgres'","logger":"airflow.hooks.base"}
+{"timestamp":"2025-05-17T15:40:03.441617","level":"info","event":"Secrets backends loaded for worker","count":1,"backend_classes":["EnvironmentVariablesBackend"],"logger":"supervisor"}
+{"timestamp":"2025-05-17T15:40:03.490367","level":"info","event":"Connection Retrieved 'banking_data_postgres'","logger":"airflow.hooks.base"}
+{"timestamp":"2025-05-17T15:40:03.586362","level":"info","event":"Running statement: \n            INSERT INTO staging.account\n            SELECT * FROM raw.account;\n        , parameters: None","logger":"airflow.task.hooks.airflow.providers.postgres.hooks.postgres.PostgresHook"}
+{"timestamp":"2025-05-17T15:40:03.785556","level":"info","event":"Rows affected: 4048","logger":"airflow.task.hooks.airflow.providers.postgres.hooks.postgres.PostgresHook"}
