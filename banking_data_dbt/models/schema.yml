@@ -1,0 +1,60 @@
+
+version: 2
+
+models:
+  - name: my_first_dbt_model
+    description: "A starter dbt model"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null
+
+  - name: my_second_dbt_model
+    description: "A starter dbt model"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null
+
+sources: 
+  - name: raw
+    database: banking_data_pipeline
+    description: "source contains banking data"
+    schema: raw
+    tables:
+      - name: transactions
+        description: "contains raw transaction banking data"
+
+      - name: customers
+        description: "contains raw customer banking data"
+
+      - name: accounts
+        description: "contains raw account banking data"
+
+      - name: cards
+        description: "contains raw card banking data"
+
+      - name: products
+        description: "contains raw product banking data"  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
