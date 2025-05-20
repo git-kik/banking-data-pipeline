@@ -26,19 +26,19 @@ sources:
     description: "source contains banking data"
     schema: raw
     tables:
-      - name: transactions
+      - name: transaction
         description: "contains raw transaction banking data"
 
-      - name: customers
+      - name: customer
         description: "contains raw customer banking data"
 
-      - name: accounts
+      - name: account
         description: "contains raw account banking data"
 
       - name: cards
         description: "contains raw card banking data"
 
-      - name: products
+      - name: product
         description: "contains raw product banking data"  
 
 

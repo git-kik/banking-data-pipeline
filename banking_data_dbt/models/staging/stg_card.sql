@@ -1,7 +1,7 @@
 {{ config(materialized='view') }}
 
 with source as (
-    select * from {{ source('raw', 'card') }}
+    select * from {{ source('raw', 'cards') }}
 ),
 
 stg_card as (

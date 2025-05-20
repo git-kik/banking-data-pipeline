@@ -11,15 +11,17 @@ with customer as (
 account as (
     select 
     foracid,
+    cif_id,
     acct_opn_date,
     account_status,
-    product_scheme_code,
+    product_schm_code,
     clr_bal_amt 
     from {{ ref('stg_account') }}
 ),
 
 trans as (
     select 
+    foracid,
     transaction_id,
     transaction_amount,
     timestamp,
@@ -36,7 +38,7 @@ cust_acc as (
     a.foracid,
     a.acct_opn_date,
     a.account_status,
-    a.product_scheme_code,
+    a.product_schm_code,
     a.clr_bal_amt
     from customer as c
     inner join account as a
