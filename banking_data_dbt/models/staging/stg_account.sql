@@ -4,7 +4,7 @@ with source as (
     select * from {{ source('raw', 'account') }}
 ),
 
-stg_acct as (
+stg_acct as (   
     select 
     cast(acid as varchar) as acid,
     cast(foracid as varchar) as foracid,
