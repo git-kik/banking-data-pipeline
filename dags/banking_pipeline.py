@@ -64,4 +64,11 @@ dbt_run_intermedtiate = BashOperator(
     bash_command=f'cd {DBT_PROJ_DIR} && dbt run -s intermeditate',
     dag=dag,
 )
-data_ingest_tasks >> dbt_run_staging >> dbt_run_intermedtiate
+
+dbt_run_final_marts = BashOperator(
+    task_id='dbt_run_final_marts_models',
+    bash_command=f'cd {DBT_PROJ_DIR} && dbt run -s final_marts',
+    dag=dag,
+)
+
+data_ingest_tasks >> dbt_run_staging >> dbt_run_intermedtiate >> dbt_run_final_marts
