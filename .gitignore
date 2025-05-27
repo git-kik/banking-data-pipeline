@@ -3,3 +3,5 @@ venv/
 dbt_modules/
 target/
 logs/
+dbt-venv/
+__pycache__/
