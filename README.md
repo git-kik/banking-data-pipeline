@@ -27,7 +27,18 @@ This project processes multiple interconnected datasets:
 
 ---
 
+## Tech Stack
+- Python – for scripting and Airflow custom operators
+- Airflow – orchestration
+- PostgreSQL – raw source + mock data warehouse
+- DBT – data transformation & modeling
+- SQL – queries in dbt, source extracts
+- Superset – dashboard/visualization
+- Docker - airflow, dbt infrastructure
+
 ## 🧬 Pipeline Architecture
+
+![ETL Pipeline](./docs/banking_data_pipeline_architecture.drawio.png)
 
 1. **Extract**  
    Fetches data from the DLytica source and stores it in the raw schema of PostgreSQL.
@@ -43,10 +54,6 @@ This project processes multiple interconnected datasets:
 
 4. **Visualize**  
    Final data marts are visualized via Apache Superset dashboards.
-
-   
-![ETL Pipeline](./docs/banking_data_pipeline_architecture.drawio.png)
-
 ---
 
 ## 🔁 Airflow DAG Overview
@@ -70,3 +77,12 @@ Your DAG: `banking_data_pipeline`
 ```bash
 git clone https://github.com/yourusername/banking-data-etl-pipeline.git
 cd banking-data-etl-pipeline
+```
+
+### 2. 
+
+##  📊 Dashboard 
+Some insights of customers transaction:
+
+(./dashboard/banking-data-pipeline-2025-05-27T11-56-00.878Z_cropped.png)
+
