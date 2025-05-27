@@ -79,7 +79,27 @@ git clone https://github.com/yourusername/banking-data-etl-pipeline.git
 cd banking-data-etl-pipeline
 ```
 
-### 2. 
+### 2. Configure Airflow Connections
+
+Set up a PostgreSQL connection in Airflow with the ID: banking_data_postgres.
+
+### 3. DBT Setup
+
+Ensure your DBT project is placed at:
+
+```bash
+/opt/banking_data_dbt/
+```
+
+### 4. Run docker Pipeline
+
+```bash
+docker compose up build --no-cache
+docker compose up
+docker compose down --volumes --remove-orphans
+```
+
+---
 
 ##  📊 Dashboard 
 Some insights of customers transaction:
