@@ -1,0 +1,13 @@
+database_name: capst_banking_data_pipeline
+sqlalchemy_uri: postgresql+psycopg2://postgres:XXXXXXXXXX@172.17.0.1:5432/banking_data_pipeline
+cache_timeout: null
+expose_in_sqllab: true
+allow_run_async: false
+allow_ctas: false
+allow_cvas: false
+allow_dml: true
+allow_file_upload: false
+extra:
+  allows_virtual_table_explore: true
+uuid: 1b6c3b5c-b5ae-4d54-b920-cfdf657e994c
+version: 1.0.0

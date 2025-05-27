@@ -1,0 +1,229 @@
+dashboard_title: banking_data_pipeline
+description: null
+css: null
+slug: null
+certified_by: null
+certification_details: null
+published: false
+uuid: 4021b71a-bacf-4b50-9b82-b68a5b44fd43
+metadata:
+  chart_configuration:
+    '165':
+      id: 165
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 166
+        - 167
+        - 168
+        - 169
+        - 170
+    '166':
+      id: 166
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 165
+        - 167
+        - 168
+        - 169
+        - 170
+    '167':
+      id: 167
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 165
+        - 166
+        - 168
+        - 169
+        - 170
+    '168':
+      id: 168
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 165
+        - 166
+        - 167
+        - 169
+        - 170
+    '169':
+      id: 169
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 165
+        - 166
+        - 167
+        - 168
+        - 170
+    '170':
+      id: 170
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 165
+        - 166
+        - 167
+        - 168
+        - 169
+  global_chart_configuration:
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    chartsInScope:
+    - 165
+    - 166
+    - 167
+    - 168
+    - 169
+    - 170
+  shared_label_colors:
+    '1': '#A1A6BD'
+    '2': '#A868B7'
+    '3': '#FCC700'
+    '4': '#E04355'
+    '5': '#666666'
+    '6': '#FF7F44'
+    '7': '#5AC189'
+    '8': '#454E7C'
+    '9': '#1FA8C9'
+    '10': '#8FD3E4'
+    '11': '#A38F79'
+    '12': '#3CCCCB'
+    SUM(amount_left): '#1FA8C9'
+    SUM(avg_trans_amount): '#454E7C'
+    AVG(avg_trans_amount): '#1FA8C9'
+    physical banking: '#5470C6'
+    mobile banking: '#91CC75'
+    card banking: '#FAC858'
+    SUM(total_balance): '#1FA8C9'
+  timed_refresh_immune_slices: []
+  expanded_slices: {}
+  refresh_frequency: 0
+  color_scheme: ''
+  label_colors: {}
+  color_scheme_domain: []
+  cross_filters_enabled: true
+position:
+  DASHBOARD_VERSION_KEY: v2
+  ROOT_ID:
+    children:
+    - GRID_ID
+    id: ROOT_ID
+    type: ROOT
+  GRID_ID:
+    children:
+    - ROW-N-YEQHFMIW
+    id: GRID_ID
+    parents:
+    - ROOT_ID
+    type: GRID
+  HEADER_ID:
+    id: HEADER_ID
+    meta:
+      text: banking_data_pipeline
+    type: HEADER
+  ROW-N-YEQHFMIW:
+    children:
+    - CHART-WSTGCTAQ
+    - CHART-I28DOZ5D
+    - CHART-HCOI5GHK
+    - CHART-X6SO0639
+    - CHART-S4YNYYEW
+    - CHART-LLSUS8KY
+    id: ROW-N-YEQHFMIW
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    type: ROW
+    parents:
+    - ROOT_ID
+    - GRID_ID
+  CHART-WSTGCTAQ:
+    children: []
+    id: CHART-WSTGCTAQ
+    meta:
+      chartId: 169
+      height: 50
+      sliceName: No of transaction per month against credit limit
+      uuid: 61805102-d558-4d67-bfc5-89d507168186
+      width: 4
+    type: CHART
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-N-YEQHFMIW
+  CHART-I28DOZ5D:
+    children: []
+    id: CHART-I28DOZ5D
+    meta:
+      chartId: 168
+      height: 50
+      sliceName: Average transaction medium
+      uuid: ffea2a65-1dbf-48ab-bdf5-2f3cf8fccbc4
+      width: 4
+    type: CHART
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-N-YEQHFMIW
+  CHART-HCOI5GHK:
+    children: []
+    id: CHART-HCOI5GHK
+    meta:
+      chartId: 170
+      height: 50
+      sliceName: Top 10 customers by total balance
+      uuid: 56a0b0e6-4651-4211-aa85-119bb3f36af8
+      width: 4
+    type: CHART
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-N-YEQHFMIW
+  CHART-X6SO0639:
+    children: []
+    id: CHART-X6SO0639
+    meta:
+      chartId: 165
+      height: 50
+      sliceName: Customer cards usage
+      uuid: 2ede9742-7d0a-45e9-8e5a-846a7cc7a762
+      width: 4
+    type: CHART
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-N-YEQHFMIW
+  CHART-S4YNYYEW:
+    children: []
+    id: CHART-S4YNYYEW
+    meta:
+      chartId: 167
+      height: 50
+      sliceName: Digital vs Non-digital transaction
+      uuid: f6d98558-5a0f-420b-ac87-a452da119264
+      width: 4
+    type: CHART
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-N-YEQHFMIW
+  CHART-LLSUS8KY:
+    children: []
+    id: CHART-LLSUS8KY
+    meta:
+      chartId: 166
+      height: 50
+      sliceName: Top accounts summary  by transaction volume
+      uuid: 916e0a36-6357-409b-a3c9-9eaceaa5afab
+      width: 4
+    type: CHART
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-N-YEQHFMIW
+version: 1.0.0
