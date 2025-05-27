@@ -1,4 +1,4 @@
-# 🏦 Banking Data ETL Pipeline
+#  Banking Data ETL Pipeline
 
 This project demonstrates a robust **ETL (Extract, Transform, Load) pipeline** for processing and visualizing banking data using modern data engineering tools like **Apache Airflow**, **DBT**, **PostgreSQL**, and **Apache Superset**.
 
@@ -15,9 +15,9 @@ This project demonstrates a robust **ETL (Extract, Transform, Load) pipeline** f
 
 ---
 
-## 🧾 Datasets Used
+## Datasets Used
 
-This project processes multiple interconnected datasets:
+This project processes multiple interconnected datasets provided from DLytica server:
 
 - `transactions` – Individual transaction records
 - `accounts` – Account-level metadata
@@ -36,7 +36,7 @@ This project processes multiple interconnected datasets:
 - Superset – dashboard/visualization
 - Docker - airflow, dbt infrastructure
 
-## 🧬 Pipeline Architecture
+##  Pipeline Architecture
 
 ![ETL Pipeline](./docs/banking_data_pipeline_architecture.drawio.png)
 
@@ -56,7 +56,7 @@ This project processes multiple interconnected datasets:
    Final data marts are visualized via Apache Superset dashboards.
 ---
 
-## 🔁 Airflow DAG Overview
+##  Airflow DAG Overview
 
 Your DAG: `banking_data_pipeline`
 
