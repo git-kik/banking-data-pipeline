@@ -1,8 +1,0 @@
-{"timestamp":"2025-05-17T15:40:00.913987","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
-{"timestamp":"2025-05-17T15:40:00.916717","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/load_raw_to_staging.py","logger":"airflow.models.dagbag.DagBag"}
-{"timestamp":"2025-05-17T15:40:01.196931","level":"info","event":"Executing: \n            DROP TABLE IF EXISTS staging.product;\n            CREATE TABLE staging.product\n            (LIKE raw.product INCLUDING ALL);\n        ","logger":"airflow.task.operators.airflow.providers.common.sql.operators.sql.SQLExecuteQueryOperator"}
-{"timestamp":"2025-05-17T15:40:01.236110","level":"info","event":"Secrets backends loaded for worker","count":1,"backend_classes":["EnvironmentVariablesBackend"],"logger":"supervisor"}
-{"timestamp":"2025-05-17T15:40:01.489156","level":"info","event":"Connection Retrieved 'banking_data_postgres'","logger":"airflow.hooks.base"}
-{"timestamp":"2025-05-17T15:40:01.513467","level":"info","event":"Secrets backends loaded for worker","count":1,"backend_classes":["EnvironmentVariablesBackend"],"logger":"supervisor"}
-{"timestamp":"2025-05-17T15:40:01.588396","level":"info","event":"Connection Retrieved 'banking_data_postgres'","logger":"airflow.hooks.base"}
-{"timestamp":"2025-05-17T15:40:01.724022","level":"info","event":"Running statement: \n            DROP TABLE IF EXISTS staging.product;\n            CREATE TABLE staging.product\n            (LIKE raw.product INCLUDING ALL);\n        , parameters: None","logger":"airflow.task.hooks.airflow.providers.postgres.hooks.postgres.PostgresHook"}
