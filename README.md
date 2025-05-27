@@ -84,5 +84,5 @@ cd banking-data-etl-pipeline
 ##  📊 Dashboard 
 Some insights of customers transaction:
 
-(./dashboard/banking-data-pipeline-2025-05-27T11-56-00.878Z_cropped.png)
+![ETL Dashboard](./dashboard/banking-data-pipeline-2025-05-27T11-56-00.878Z_cropped.png)
 
