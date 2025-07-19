@@ -75,8 +75,8 @@ Your DAG: `banking_data_pipeline`
 ### 1. Clone the Repo
 
 ```bash
-git clone https://github.com/yourusername/banking-data-etl-pipeline.git
-cd banking-data-etl-pipeline
+git clone https://github.com/yourusername/banking-data-pipeline.git
+cd banking-data-pipeline
 ```
 
 ### 2. Configure Airflow Connections
